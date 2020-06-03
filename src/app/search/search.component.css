@@ -1,0 +1,93 @@
+.fluid-container{
+    padding-top:10px;
+    padding-bottom: 10px;
+    background-color: black;
+    width:100%;
+    height:70px;
+}
+.searchheader
+{      width:285px;
+    float: right;
+    margin-right: 20px;
+    height: 54px;
+}
+.container{
+    padding-top:20px;
+    padding-bottom: 20px;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 0 2em;
+}
+.imagetable{
+    width:200px;
+    height: 212px;
+ }
+ .tablep{
+     overflow: hidden;
+     max-height: 120px;
+ }
+
+#tda{
+    vertical-align:top;
+    padding: 10px;
+    padding-top:10px ;
+}
+#tdb{
+    vertical-align:top;
+    padding: 10px;
+    padding-top:10px;
+    width:120px;
+    
+}
+
+   @media only screen and (max-width: 600px) {
+    .fluid-container{
+        padding-top: 5px;
+    }
+    .searchheader{
+              width:285px;
+     }
+     form{
+         padding-top:0px;
+         padding-bottom: 0px;
+     }
+     #forminput{
+         width:178px!important;
+         margin-right: 10px;
+     }
+     .container{
+         padding-left: 10px;
+         padding-right: 10px;
+         width: 420px;
+     }
+     tr{
+         width: 400px;
+         overflow: hidden;
+     }
+     .imagetable{
+        width:180px;
+        height:180px;
+     }
+     #tda{
+         padding: 5px;
+     }
+     #tda h4{
+         margin-bottom: 3px;
+     }
+     .tablep{
+         margin-bottom: 2px;
+         font-size: 15px;
+         max-width: 151px;
+     }
+     #tdb{
+         padding:5px;
+         width: 70px;
+     }
+     #btnadd{
+         padding: 6px;
+         font-size: 10px;
+     }
+
+
+   }

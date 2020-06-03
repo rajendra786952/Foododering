@@ -1,0 +1,50 @@
+
+<div class="fluid-container" >
+  
+  <div class="searchheader">
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" name="first" placeholder="Search" aria-label="Search" [(ngModel)]="value" id="forminput" (change)="change()">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit"  (click)="search()">Search</button>
+    </form>
+  </div>
+</div>
+<div class="container">
+  <table *ngIf="raj">
+    <tbody>
+    <tr *ngFor="let dish of dishes" class="shadow">
+      <td id="tdc">
+        <img src="{{dish.image}}" class="imagetable">
+      </td>
+      <td id="tda">
+        <h4>{{dish.name}}</h4>
+        <p class="tablep">{{dish.description}}</p>
+      </td>
+      <td id="tdb">
+        <span >{{dish.price|currency:'INR'}}</span><br>
+        <button class="btn btn-primary mt-2" id="btnadd">ADD +</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<div class="container">
+  <table *ngIf="!raj">
+    <tbody>
+    <tr  class="shadow">
+      <td id="tdc">
+        <img src="{{image}}" class="imagetable">
+      </td>
+      <td id="tda">
+        <h4>{{value1}}</h4>
+        <p class="tablep">{{description}}</p>
+      </td>
+      <td id="tdb">
+        <span >{{price|currency:'INR'}}</span><br>
+        <button class="btn btn-primary mt-2" id="btnadd">ADD +</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+  

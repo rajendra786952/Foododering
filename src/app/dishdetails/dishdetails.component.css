@@ -1,0 +1,224 @@
+.headerafter{
+    height: 376px;
+
+    background-image: url(/assets/foodhome.webp);
+    background-position:center;
+}
+.headerlast{
+    height: 46px;
+    background-color:#D0D3D4;
+}
+.headerlast ul {
+    padding:0px;
+    padding-top:8px;
+    padding-bottom: 10px;
+  
+}
+.headerlast ul li{
+  list-style-type: none;
+  font-weight: 20px;
+ 
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.headerlast ul li a{
+    text-decoration: none;
+    color:black;
+}
+.headerlast ul li{
+    float: left;
+}
+#active{
+    color: goldenrod;
+}
+.dishheader{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top:20px;
+    background-color:#F4F6F6 ;
+    position: relative;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+ 
+}
+.cardheader{
+    height:450px;
+    z-index:0.5;
+    width:300px;
+    margin-top: 15px;
+    border-radius:5px 5px 10px 10px;  
+    
+    overflow:hidden;
+    padding-bottom:30px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+ .imgwidth{
+    height:227px;
+    border-radius:5px 5px 0px 0px;  
+}
+.card-text{
+    height:75px;
+    overflow: hidden;
+
+}
+.price
+{
+    font-weight: bold;
+}
+#cardlast{
+    float: right;
+}
+#dishheader
+{
+    position: fixed;
+    bottom: 5px;
+    width: 100%;
+    z-index: 1;
+    background-color: rgb(255, 204, 0);
+    left: 0px;
+}
+.order{
+    font-weight:40px;
+    font-size: 30px;
+    padding: 5px;
+    display: inline-block;
+}
+.ordertotal{
+    display: inline-block;
+    float: right;
+    padding: 10px;
+    font-weight:40px;
+    font-size: 20px;
+    
+}
+.ordertotalspan{
+     margin-right: 10px;
+}
+#ordertotalbutton
+{
+    margin-right: 20px;
+}
+#btnvalue{
+    padding: 3px;
+    color:white;
+}
+.search{
+    display: inline-block;
+    border-radius:50%;
+    width:40px;
+    height:40px;
+    text-align: center;
+    background-color:#ededeb;
+    position: fixed;
+    bottom: 75px;
+    right: 50px;
+    
+}
+#iconsearch{
+    padding-top: 10px;
+    font-size: 20px;
+    color: black;
+    
+}
+
+@media only screen and (max-width: 997px) {
+    .cardheader{
+      width:220px;
+      padding-bottom: 0px;
+      height: 341px;
+    }
+    .imgwidth{
+        height:200px;
+    }
+    .card-body{
+        padding: 12px;
+    }
+    .card-body h5{
+        margin-bottom: 5px;
+        font-size:18px;
+     }
+     .card-text{
+        margin-bottom: 5px;
+        height: 58px;
+        font-size:13px;
+    }
+    .price{
+        font-size: 15px;
+    }
+    #cardlast{
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 10px;
+    }
+    #btnvalue{
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 8px;
+        font-size: 10px;
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .headerafter{
+        height: 230px;
+    }
+    .headerlast{
+        font-size: 12px;
+        height: 35px;
+    }
+    .headerlast ul li{
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+    .cardheader{
+        width:160px;
+        height:253px;
+      }
+      .imgwidth{
+          height: 136px;
+      }
+      .card-body{
+          padding: 6px;
+      }
+      .card-body h5{
+         margin-bottom: 2px;
+         font-size: 16px;
+      }
+      .card-text{
+          margin-bottom: 2px;
+          height: 46px;
+          font-size:10px;
+      }
+      .price{
+          font-size: 12px;
+      }
+      #cardlast{
+          padding: 3px;
+          font-size: 10px;
+      }
+      #btnvalue
+      {
+        padding: 7px;
+        font-size: 10px;
+      }
+      .order span{
+          font-size: 20px;
+          font-weight: 25px;
+          padding-left: 10px;
+      }
+     
+      .ordertotalspan{
+          font-size: 15px;
+      }
+      #ordertotalbutton
+    {
+      padding:6px ;
+      width: 60px;
+      font-size: 10px;
+    }
+}

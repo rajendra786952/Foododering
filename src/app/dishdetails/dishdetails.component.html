@@ -1,0 +1,49 @@
+<div class="fluid-container">
+  <div class="headerafter">
+  </div>
+  </div>
+  <div class="fluid-container headerlast" >
+    <ul>
+        <li>
+          <a  href="#" id="active">CHINA SIZZLE <span class="sr-only">(current)</span></a>
+        </li>
+        <li >
+          <a  href="#">SOUTHERN SPECIAL</a>
+        </li>
+        <li >
+          <a  href="#">PHOREN FANCY</a>
+        </li>
+      </ul>
+    </div>
+<div class="dishheader">
+  <div *ngFor="let dish of dishes" class="shadow cardheader">
+    <div class="card">
+      <img class="card-img-top imgwidth" src={{dish.image}} alt={{dish.name}}>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">{{dish.name}}</h5>
+        <p class="card-text">{{dish.description}}</p>
+      
+        <span class="price">{{dish.price|currency:'INR'}}</span>
+        <button class="btn btn-primary" *ngIf="dish.raj" id="cardlast" (click)="onClick(dish.id,dish.price)">ADD +</button>
+        <div class="btn-group btn-group-sm" *ngIf="!dish.raj" id="cardlast">
+          <button type="button" class="btn btn-primary" (click)="ondecrement(dish.price,dish.id)">-</button>
+          <span class="bg-primary text-white" id="btnvalue">{{dish.value}}</span>
+          <button type="button" class="btn btn-primary" (click)="onincrement(dish.price,dish.id)">+</button>
+         </div>
+    </div>
+  </div>
+    <div class="fluid-container" id="dishheader" *ngIf="price!=0">
+      <div class="order">
+       <span >Your Order ({{value}})</span>
+      </div>
+       <div class="ordertotal">
+        <span class="ordertotalspan">Subtotal:{{price}}</span>
+        <button class="btn btn-primary" id="ordertotalbutton">View Cart</button>
+       </div>
+    </div>
+    <div class="search">
+      <a routerLink="/search" routerLinkActive="active" ><i class="fa fa-search" id="iconsearch" aria-hidden="true"></i></a>
+    </div>
+</div>
+    

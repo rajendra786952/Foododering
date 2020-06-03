@@ -1,0 +1,47 @@
+
+.header{
+    background-color: rgb(255, 204, 0);
+    color: white;
+    font-weight: bold;
+}
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#rajnavigation{
+   display:inline-block;  
+  
+}
+.headersecond{
+  
+    padding-top: 5px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+.headerthird{
+    padding-top: 10px;   
+}
+i{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 30px;
+}
+@media only screen and (max-width: 600px) {
+    #rajnavigation{
+        padding: 0px;
+        padding-top: 5px;
+    }
+    .headersecond h6{
+        font-size:70%;
+    }
+   .headersecond h4{
+        font-size: 14px ;
+    }
+    i{
+        font-size: 20px;
+    }
+  }
+
+
+
